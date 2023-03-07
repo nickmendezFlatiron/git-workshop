@@ -1,12 +1,9 @@
-function readFile() {
-  const fs = require('fs')
-  const file = fs.readFileSync(process.argv[2], 'utf-8').trim()
-  return file.split('\n')
-  // return an array of strings
-}
+function addNumbers(input){
 
-function main(){
-  readFile()
-}
+  let sum = 0
+  for(let i = 0; i < input.length ; i++) {
+    sum += input
+  }
 
-main()
+  return sum
+}
